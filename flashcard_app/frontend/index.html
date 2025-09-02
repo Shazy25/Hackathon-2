@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BrainPal -AI study Mate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="toggle-btn" aria-label="Toggle sidebar">&#9776;</button>
+  <div class="container">
+
+    <aside class="sidebar">
+      <h2>BrainPal</h2>
+      <nav>
+   <nav>
+  <ul>
+    <li><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/create-flashcards">Create Flashcards</a></li>
+    <li><a href="/review">Review</a></li>
+    <li><a href="/stats">Stats</a></li>
+    <li><a href="/settings">Settings</a></li>
+    <li><a href="/logout">Logout</a></li>
+  </ul>
+</nav>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <h1>Good morning, <span class="username">Student!</span> 👋</h1>
+        <p>Ready to continue your learning journey today?</p>
+      </header>
+
+      <section class="stats-cards">
+        <div class="card stat">
+          <h3>Cards Reviewed</h3>
+          <p>12</p>
+        </div>
+        <div class="card stat">
+          <h3>Cards Mastered</h3>
+          <p>8</p>
+        </div>
+        <div class="card stat">
+          <h3>Time Studied</h3>
+          <p>45 min</p>
+        </div>
+         <textarea id="notes" rows="6" placeholder="Paste your study notes here..." style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+    <button id="generateBtn" class="btn">Generate Flashcards</button>
+  </section>
+
+  <section class="flashcard-preview" id="cardSection" style="display: none;">
+    <h2>Your Flashcards</h2>
+    <div class="card-grid" id="cardGrid"></div>
+  </section>
+
+      </section>
+
+      <section class="flashcard-preview">
+        <h2>Preview Flashcards</h2>
+        <div class="card-grid">
+          <div class="flashcard">
+            <div class="front">What is photosynthesis?</div>
+            <div class="back">Process by which plants convert light into energy.</div>
+          </div>
+          <div class="flashcard">
+            <div class="front">Define osmosis</div>
+            <div class="back">Water movement through a semi-permeable membrane.</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
